@@ -1,0 +1,12 @@
+name: Pull Request Demo
+
+on:
+  pull_request:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Pull Request Created!"
