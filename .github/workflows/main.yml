@@ -1,14 +1,12 @@
-name: My First Workflow
+name: Pull Request Demo
 
 on:
-   pull_request:
-    branches:
-      - main
+  pull_request:
 
 jobs:
-  hello:
+  demo:
     runs-on: ubuntu-latest
 
     steps:
       - name: Print Message
-        run: echo "Hello GitHub Actions!"
+        run: echo "Pull Request Created!"
