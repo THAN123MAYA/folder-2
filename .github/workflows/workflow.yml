@@ -1,6 +1,7 @@
-name: Pull Request Demo
+name: My First Workflow
 
 on:
+  push:
   pull_request:
 
 jobs:
@@ -8,5 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
       - name: Print Message
-        run: echo "Pull Request Created!"
+        run: echo "GitHub Actions  working!"
